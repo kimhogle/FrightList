@@ -5,3 +5,19 @@ aside>img {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+header>h1 {
+    font-family: "Creepster";
+    color: black;
+    font-size: 7em;
+}
+
+body {
+    *background-image: url("images/noise.jpg");*
+    background-color: #ff4f03;
+   }
+
+article>p {
+    font-size: 48px;
+}
