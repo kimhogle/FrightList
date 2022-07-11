@@ -14,7 +14,7 @@ header>h1 {
 }
 
 body {
-    *background-image: url("images/noise.jpg");*
+    *background-image: url("images/noise.jpg");* 
     background-color: #ff4f03;
    }
 
