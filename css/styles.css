@@ -5,30 +5,72 @@ aside > img {
   margin-left: auto;
   margin-right: auto; }
 
-header > h1 {
+header {
+  display: block;
+  position: fixed;
+  background-color: orangered;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px; }
+
+main > h1 {
   font-family: "Creepster";
   color: black;
   font-size: 7em; }
 
-body {
-  *background-image: url("images/noise.jpg");
-  * 
-    background-color: #ff4f03; }
-
 article > p {
   font-size: 48px;
   color: black;
-  font: Lato Light; }
+  width: 75%; }
+
+p {
+  margin: 0.5em 0 0.5em 0; }
 
 body, html {
-  height: 100%; }
+  height: 100%;
+  font: Lato Light, Arial, Helvetica, sans-serif; }
 
 * {
   box-sizing: border-box; }
 
+nav a:visited,
+nav a:link {
+  color: black;
+  text-decoration: none; }
+
+nav > ul {
+  display: inline;
+  padding: 0; }
+
+nav > ul > li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px 0 5px; }
+
+main {
+  display: block;
+  padding-top: 20em;
+  padding-bottom: 3em;
+  min-height: 85%; }
+
+aside,
+article {
+  padding: 2em; }
+
+footer {
+  padding: 2px;
+  display: block;
+  position: fixed;
+  background-color: blueviolet;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px; }
+
 .background-image {
   /* The image */
-  background-image: url("images/vhsstack.jpg");
+  background-image: url("images/noise.jpg");
   /* Blur  */
   filter: blur(4px);
   -webkit-filter: blur(4px);
@@ -40,13 +82,17 @@ body, html {
   background-size: cover;
   background-attachment: fixed; }
 
+.sub-title {
+  font-size: 3em;
+  padding: 10px; }
+
 /* css animation INTENTIONAL LOOKING GLITCH */
 body {
   /* background: #222; */
   min-height: 100vh;
   display: grid;
   place-items: center;
-  color: white;
+  color: black;
   font-family: sans-serif; }
 
 .glitch {
