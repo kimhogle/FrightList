@@ -11,26 +11,29 @@
 <body>
   
     <header> 
-
-
-        <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="movies.html">Movies</a></li>
-            <li><a href="/">Shows</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="socialmedia.html">Social Media</a></li>
-        </ul>
-    </nav>
-    </header>
-
-
-    <main>
         <h1 class="glitch">
             <span aria-hidden="true">Kim's Fright List</span>
             Kim's Fright List
             <span aria-hidden="true">Kim's Fright List</span>
           </h1>
+
+
+        <nav class="clearfix">
+            <div class="row limited>"
+                <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li class="active"><a href="/">Shows</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="socialmedia.html">Social Media</a></li>
+        </ul>
+    </div>
+    </nav>
+    </header>
+
+
+    <main>
 
 
 <!--List All Movies Here-->
@@ -39,42 +42,6 @@
     <section class="columns-desktop">
 
         <div class="show">
-            <img src="../images/stack2.jpg" alt="Show Image Here" />
-            <div class="columns">
-                <div class="title">Show Title Goes Here</div>
-                <div class="rank">Ranking Goes Here</div>
-            </div>
-            <p class="opinion">Opinion Paragraph Goes Here</p>
-        </div>
-
-        <div class="show">
-            <img src="images/stack2.jpg" alt="Show Image Here" />
-            <div class="columns">
-                <div class="title">Show Title Goes Here</div>
-                <div class="rank">Ranking Goes Here</div>
-            </div>
-            <p class="opinion">Opinion Paragraph Goes Here</p>
-        </div>
-
-        <div class="show">
-            <img src="images/stack2.jpg" alt="Show Image Here" />
-            <div class="columns">
-                <div class="title">Show Title Goes Here</div>
-                <div class="rank">Ranking Goes Here</div>
-            </div>
-            <p class="opinion">Opinion Paragraph Goes Here</p>
-        </div>
-
-        <div class="show">
-            <img src="images/stack2.jpg" alt="Show Image Here" />
-            <div class="columns">
-                <div class="title">Show Title Goes Here</div>
-                <div class="rank">Ranking Goes Here</div>
-            </div>
-            <p class="opinion">Opinion Paragraph Goes Here</p>
-        </div>
-
-        <div class="show">
             <img src="images/stack2.jpg" alt="Show Image Here" />
             <div class="columns">
                 <div class="title">Show Title Goes Here</div>
@@ -85,7 +52,20 @@
 
 
 
+<!--FLIP CARD CODE-->
 
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="../images/coffin.png" alt="Show Image 1">
+      </div>
+      <div class="flip-card-back">
+        <h1>Show Name Here</h1>
+        <p>Architect & Engineer</p>
+        <p>We love that guy</p>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -114,15 +94,7 @@
 
 
 
-<footer>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="socialmedia.html">Social Media</a></li>
-        </ul>
-    </nav>
-</footer>
+
 
 
 </body>
