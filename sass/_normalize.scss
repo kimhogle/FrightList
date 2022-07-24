@@ -1,7 +1,8 @@
 /* Header */
 
 header {
-  display: block;
+  display: grid;
+  grid-template-columns: auto;
   position: fixed;
   background-color: orangered;
   top: 0;
@@ -9,6 +10,8 @@ header {
   width: 100%;
   height: min-content;
   padding: 5px;
+  z-index: 100;
+  grid-column: 1 / -1;
   /*background-image: url("../images/noise.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -33,11 +36,13 @@ button#hamburgerBtn {
 }
 
 
+/* GRID POSITIONING 
 
+[grid container] {
+  grid-template-columns: 200px 200px;
+}
 
-
-
-
+*/
 
 
 
@@ -45,7 +50,7 @@ button#hamburgerBtn {
 
 
 aside > img {
-    width:100%;
+    width:75%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -56,22 +61,22 @@ aside > img {
 
 
 header > h1 {
-    font-family: "Creepster";
+    font-family: "Creepster", "Chiller";
     color: black;
     font-size: 10em;
 }
 
 article > h2 {
-  font-family:'Times New Roman', Times, serif;
-  color: purple;
+  font-family: "Calibri";
+  color: red;
 }
 
 
 article > p {
     font-size: 48px;
-    color: pink;
+    color:orangered;
     width: 75%;
-    font-family:'Times New Roman', Times, serif;
+    font-family:"Calibri";
 }
 
 p {
@@ -80,7 +85,7 @@ p {
 
 body, html {
     height: 100%;
-    font-family:'Times New Roman', Times, serif;
+    font-family: "Calibri";
   }
   
  * {
@@ -117,6 +122,9 @@ main {
   padding-top: 20em;
   padding-bottom: 3em;
   min-height: 85%;
+  margin-top: 50px;
+  position: relative;
+  grid-column: 1 / -1;
 }
 
 
@@ -155,6 +163,9 @@ article {
 
 body {
   padding-bottom: 65px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: min-content auto;
 }
 
 

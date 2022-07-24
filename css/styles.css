@@ -1,6 +1,7 @@
 /* Header */
 header {
-  display: block;
+  display: grid;
+  grid-template-columns: auto;
   position: fixed;
   background-color: orangered;
   top: 0;
@@ -8,6 +9,8 @@ header {
   width: 100%;
   height: min-content;
   padding: 5px;
+  z-index: 100;
+  grid-column: 1 / -1;
   /*background-image: url("../images/noise.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -26,35 +29,42 @@ button#hamburgerBtn {
   cursor: pointer;
   padding: 0 30px 0 2vw; }
 
+/* GRID POSITIONING 
+
+[grid container] {
+  grid-template-columns: 200px 200px;
+}
+
+*/
 /* Main Content */
 aside > img {
-  width: 100%;
+  width: 75%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
 header > h1 {
-  font-family: "Creepster";
+  font-family: "Creepster", "Chiller";
   color: black;
   font-size: 10em; }
 
 article > h2 {
-  font-family: 'Times New Roman', Times, serif;
-  color: purple; }
+  font-family: "Calibri";
+  color: red; }
 
 article > p {
   font-size: 48px;
-  color: pink;
+  color: orangered;
   width: 75%;
-  font-family: 'Times New Roman', Times, serif; }
+  font-family: "Calibri"; }
 
 p {
   margin: 0.5em 0 0.5em 0; }
 
 body, html {
   height: 100%;
-  font-family: 'Times New Roman', Times, serif; }
+  font-family: "Calibri"; }
 
 * {
   box-sizing: border-box; }
@@ -78,7 +88,10 @@ main {
   flex-direction: column;
   padding-top: 20em;
   padding-bottom: 3em;
-  min-height: 85%; }
+  min-height: 85%;
+  margin-top: 50px;
+  position: relative;
+  grid-column: 1 / -1; }
 
 aside,
 article {
@@ -99,7 +112,10 @@ article {
   flex-direction: column; }
 
 body {
-  padding-bottom: 65px; }
+  padding-bottom: 65px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: min-content auto; }
 
 /* Noise background 
 body {
@@ -239,7 +255,7 @@ footer {
     padding: 0;
     display: none; }
 
-  nav li {
+  nav ul li {
     list-style-type: none; }
 
   nav li.active {
@@ -270,11 +286,20 @@ footer {
     font-size: 2em; }
 
   .article {
-    font-size: 10px; }
+    font-size: 22px; }
+
+  .sub-title {
+    font-size: 26px; }
 
   .stackimage {
     text-align: center;
-    padding: 0; } }
+    padding: 0; }
+
+  .Billy {
+    width: auto; }
+
+  main {
+    margin-top: 0px; } }
 @media only screen and (min-width: 768px) {
   nav button {
     display: none; }
@@ -284,7 +309,10 @@ footer {
 
   nav li {
     float: left;
-    width: 20%; } }
+    width: 20%; }
+
+  heading h1 {
+    font-family: "FangSong"; } }
 /* end of media query*/
 @media only screen and (min-width: 1024px) {
   nav ul {

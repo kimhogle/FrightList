@@ -9,7 +9,7 @@
         display: none;
     }
 
-    nav li {
+    nav ul li {
         list-style-type: none;
     }
 
@@ -50,11 +50,24 @@
     }
 
     .article {
-        font-size: 10px;
+        font-size: 22px;
+    }
+
+    .sub-title {
+        font-size: 26px;
     }
 
     .stackimage {
         text-align: center;
         padding: 0;
     }
+
+    .Billy {
+        width: auto;
+    }
+
+    main {
+        margin-top: 0px;
+    }
+
   }
