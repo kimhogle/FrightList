@@ -7,11 +7,11 @@
         background-color: rgb(255, 0, 179);
       }
       
-      li {
+    li {
         float: left;
       }
       
-      li a {
+    li a {
         display: block;
         color: black;
         text-align: center;
@@ -28,7 +28,21 @@
           display: none;
       }
 
+      article.email {
+          padding-top: 200px;
+      }
+
+      .facebook {
+          padding-top: 200px;
+      }
+
+      article.trailers {
+        text-align: center;
+    }
+
+}
 
 
 
-} /* end of media query*/
+
+ /* end of media query*/

@@ -31,11 +31,11 @@ header > h1 {
 
 article > h2 {
   font-family: "Calibri";
-  color: red; }
+  color: #ff00b3; }
 
 article > p {
   font-size: 48px;
-  color: orangered;
+  color: #ff00b3;
   width: 75%;
   font-family: "Calibri"; }
 
@@ -81,6 +81,22 @@ body {
 
 .socials {
   padding-top: 100px; }
+
+.email {
+  text-align: center; }
+
+aside img {
+  margin: 0;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+main p {
+  font-size: 32px;
+  color: #a500bb;
+  text-align: center;
+  margin: 0; }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
@@ -212,6 +228,9 @@ body {
 
   main {
     margin-top: 0px; } }
+@media only screen and (max-width: 311px) {
+  .menu_btn {
+    padding-top: 250px; } }
 @media only screen and (max-width: 767px) {
   #menu__toggle {
     opacity: 0; }
@@ -285,7 +304,10 @@ body {
     background-color: #CFD8DC; }
 
   .glitch {
-    font-size: 3em; } }
+    font-size: 3em; }
+
+  article.trailers {
+    text-align: center; } }
 /* end of media query*/
 @media only screen and (min-width: 768px) {
   ul {
@@ -310,5 +332,14 @@ body {
     background-color: #b90f86; }
 
   #menu__toggle {
-    display: none; } }
+    display: none; }
+
+  article.email {
+    padding-top: 200px; }
+
+  .facebook {
+    padding-top: 200px; }
+
+  article.trailers {
+    text-align: center; } }
 /* end of media query*/
