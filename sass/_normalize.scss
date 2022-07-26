@@ -4,19 +4,14 @@ header {
   display: grid;
   grid-template-columns: auto;
   position: fixed;
-  background-color: orangered;
+  background-color: rgb(255, 0, 179);
   top: 0;
   left: 0;
   width: 100%;
   height: min-content;
-  padding: 5px;
+  padding: 0px;
   z-index: 100;
   grid-column: 1 / -1;
-  /*background-image: url("../images/noise.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  backdrop-filter: blur(1px);*/
 }
 
 
@@ -26,23 +21,8 @@ header > h1 {
 }
 
 
-button#hamburgerBtn {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2.4rem;
-  cursor: pointer;
-  padding: 0 30px 0 2vw;
-}
 
 
-/* GRID POSITIONING 
-
-[grid container] {
-  grid-template-columns: 200px 200px;
-}
-
-*/
 
 
 
@@ -88,36 +68,13 @@ body, html {
     font-family: "Calibri";
   }
   
- * {
-    box-sizing: border-box;
-  }
-  
 
-
-nav a:visited,
-nav a:link {
-  color: black;
-  text-decoration: none;
-}
-
-
-nav > ul {
-  display: inline;
-  padding: 0;
-}
-
-
-nav > ul > li {
-  display: inline-block;
-  list-style: none;
-  margin: 0 5px 0 5px;
-}
 
 
 
 
 main {
-  display: flex;
+  display: grid;
   flex-direction: column;
   padding-top: 20em;
   padding-bottom: 3em;
@@ -163,27 +120,51 @@ article {
 
 body {
   padding-bottom: 65px;
-  display: grid;
+
   grid-template-columns: auto;
   grid-template-rows: min-content auto;
 }
 
 
 
-
-
-
-
-/* Noise background 
-body {
-  background-image: url("../images/noise.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  backdrop-filter: blur(1px);
+.socials {
+  padding-top: 100px;
 }
 
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -358,69 +339,3 @@ body {
       transition-delay: 0s !important;
     }
   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer */
-
-footer {
-  padding: 2px;
-  display: flex;
-  position: fixed;
-  background-color: blueviolet;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

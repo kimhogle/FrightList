@@ -1,11 +1,3 @@
-function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-}
-
-let x = document.getElementById('hamburgerBtn');
-x.onclick = toggleMenu;
-
-
 function getMailtoUrl(to, subject, body) {
     var args = [];
     if (typeof subject !== 'undefined') {

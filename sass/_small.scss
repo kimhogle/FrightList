@@ -1,47 +1,8 @@
-@media only screen and (max-width: 400px) {
-    nav {
-        background-color: orangered;
-    }
-
-    nav ul {
-        margin: 0;
-        padding: 0;
-        display: none;
-    }
-
-    nav ul li {
-        list-style-type: none;
-    }
-
-    nav li.active {
-        background-color: rgba(0,0,0,0.5);
-    }
-
-    nav a {
-        display: block;
-        padding: .8rem 0;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    nav a:hover {
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-
-    nav ul.open {
-        display: block;
-    }
+@media only screen and (max-width: 480px) {
 
 
-
-    button#hamburgerBtn {
-        background: none;
-        border: none;
-        color: white;
-        font-size: 2.4rem;
-        cursor: pointer;
-        padding: 0 30px 0 2vw;
+    p {
+        color: Black;
     }
 
 
@@ -69,5 +30,7 @@
     main {
         margin-top: 0px;
     }
+
+
 
   }
