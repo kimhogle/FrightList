@@ -4,6 +4,8 @@ This website includes lists of my (Kim Hogle) top favorite horror movies and hor
 
 
 The features I included in this project include:
+
+
 CSS:
 1) A navigation menu that expands and collapses properly at desktop and mobile sizes, such as by switching between vertical and horizontal styles, or is opened and closed by clicking the “hamburger” icon.
 
