@@ -1,201 +1,219 @@
-/* Header */
-header {
-  display: grid;
-  grid-template-columns: auto;
-  position: fixed;
-  background-color: #ff00b3;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: min-content;
-  padding: 0px;
-  z-index: 100;
-  grid-column: 1 / -1; }
+@media only screen and (max-width: 767px) {
+  /* Header */
+  header {
+    display: grid;
+    grid-template-columns: auto;
+    position: fixed;
+    background-color: #b40404;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: min-content;
+    padding: 0px;
+    z-index: 100;
+    grid-column: 1 / -1; }
 
-header > h1 {
-  display: flex;
-  size: auto; }
+  header > h1 {
+    display: flex;
+    size: auto;
+    font-family: "Creepster", "Chiller";
+    color: black;
+    font-size: 10em; }
 
-/* Main Content */
-aside > img {
-  width: 75%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  /* Main Content */
+  aside > img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
-header > h1 {
-  font-family: "Creepster", "Chiller";
-  color: black;
-  font-size: 10em; }
+  article > h2 {
+    font-family: "Calibri";
+    color: #b40404; }
 
-article > h2 {
-  font-family: "Calibri";
-  color: #ff00b3; }
+  article > p {
+    font-size: 24px;
+    color: #b40404;
+    width: 75%;
+    font-family: "Calibri"; }
 
-article > p {
-  font-size: 48px;
-  color: #ff00b3;
-  width: 75%;
-  font-family: "Calibri"; }
+  p {
+    margin: 0.5em 0 0.5em 0; }
 
-p {
-  margin: 0.5em 0 0.5em 0; }
+  body, html {
+    height: 100%;
+    font-family: "Calibri"; }
 
-body, html {
-  height: 100%;
-  font-family: "Calibri"; }
+  main {
+    display: grid;
+    flex-direction: column;
+    padding-top: 20em;
+    padding-bottom: 3em;
+    min-height: 85%;
+    margin-top: 50px;
+    position: relative;
+    grid-column: 1 / -1; }
 
-main {
-  display: grid;
-  flex-direction: column;
-  padding-top: 20em;
-  padding-bottom: 3em;
-  min-height: 85%;
-  margin-top: 50px;
-  position: relative;
-  grid-column: 1 / -1; }
+  main.main {
+    text-align: center; }
 
-aside,
-article {
-  padding: 2em; }
+  aside,
+  article {
+    padding: 2em; }
 
-.sub-title {
-  font-size: 3em;
-  padding: 10px; }
+  .sub-title {
+    font-size: 32px;
+    padding: 10px;
+    text-align: left; }
 
-.movie {
-  display: flex; }
+  .movie {
+    display: flex; }
 
-.show {
-  display: flex; }
+  .show {
+    display: flex; }
 
-.article {
-  display: flex;
-  flex-direction: column; }
+  .article {
+    display: flex;
+    flex-direction: column; }
 
-body {
-  padding-bottom: 65px;
-  grid-template-columns: auto;
-  grid-template-rows: min-content auto; }
+  body {
+    padding-bottom: 65px;
+    background-image: url("../images/theater.jpg");
+    background-color: #060d1d;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    grid-template-columns: auto;
+    grid-template-rows: min-content auto; }
 
-.socials {
-  padding-top: 100px; }
+  .socials {
+    padding-top: 100px; }
 
-.email {
-  text-align: center; }
+  .email {
+    text-align: center; }
 
-aside img {
-  margin: 0;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  aside img {
+    margin: 0;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
-main p {
-  font-size: 32px;
-  color: #a500bb;
-  text-align: center;
-  margin: 0; }
+  main p {
+    font-size: 32px;
+    color: #b40404;
+    text-align: center;
+    margin: 0; }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 400px;
-  height: 600px;
-  border: none;
-  display: flex;
-  flex-wrap: wrap;
-  perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */ }
+  .movieIntro, .showsIntro {
+    color: #b40404;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 0; }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d; }
+  main img {
+    text-align: center; }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg); }
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 600px;
+    border: none;
+    display: block;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */ }
 
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden; }
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d; }
 
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: transparent;
-  color: black; }
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); }
 
-/* Style the back side */
-.flip-card-back {
-  background-color: black;
-  color: white;
-  transform: rotateY(180deg); }
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden; }
 
-/* css animation INTENTIONAL LOOKING GLITCH */
-body {
-  /*background: black; */
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  color: black;
-  font-family: sans-serif; }
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: transparent;
+    color: black; }
 
-.glitch {
-  font-size: 8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
-  display: flex;
-  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-  animation: glitch 500ms infinite; }
+  /* Style the back side */
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg); }
 
-.glitch span {
-  position: absolute;
-  top: 0;
-  left: 0; }
+  /* css animation INTENTIONAL LOOKING GLITCH */
+  body {
+    /*background: black; */
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    color: black;
+    font-family: sans-serif; }
 
-.glitch span:first-child {
-  animation: glitch 650ms infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-  transform: translate(-0.025em, -0.0125em);
-  /* color: green; */
-  opacity: 0.8; }
+  .glitch {
+    font-size: 8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    animation: glitch 500ms infinite; }
 
-.glitch span:last-child {
-  animation: glitch 375ms infinite;
-  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
-  transform: translate(0.0125em, 0.025em);
-  /* color: red; */
-  opacity: 0.8; }
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0; }
 
-/* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
-@keyframes glitch {
-  0% {
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75); }
-  14% {
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75); }
-  15% {
-    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); }
-  49% {
-    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); }
-  50% {
-    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75); }
-  99% {
-    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75); }
-  100% {
-    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75); } }
-@media (prefers-reduced-motion: reduce) {
+  .glitch span:first-child {
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-0.025em, -0.0125em);
+    /* color: green; */
+    opacity: 0.8; }
+
+  .glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+    transform: translate(0.0125em, 0.025em);
+    /* color: red; */
+    opacity: 0.8; }
+
+  /* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75); }
+    14% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75); }
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); }
+    49% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); }
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75); }
+    99% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75); }
+    100% {
+      text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75); } } }
+@media only screen and (max-width: 767px) and (prefers-reduced-motion: reduce) {
   *,
   ::before,
   ::after {
@@ -206,32 +224,8 @@ body {
     scroll-behavior: auto !important;
     transition-duration: 0s !important;
     transition-delay: 0s !important; } }
-@media only screen and (max-width: 480px) {
-  p {
-    color: Black; }
-
-  .glitch {
-    font-size: 2em; }
-
-  .article {
-    font-size: 22px; }
-
-  .sub-title {
-    font-size: 26px; }
-
-  .stackimage {
-    text-align: center;
-    padding: 0; }
-
-  .Billy {
-    width: auto; }
-
-  main {
-    margin-top: 0px; } }
-@media only screen and (max-width: 311px) {
-  .menu_btn {
-    padding-top: 250px; } }
 @media only screen and (max-width: 767px) {
+  /*Hamburger Menu*/
   #menu__toggle {
     opacity: 0; }
 
@@ -265,7 +259,7 @@ body {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #616161;
+    background-color: white;
     transition-duration: .25s; }
 
   .menu__btn > span::before {
@@ -286,14 +280,14 @@ body {
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #ECEFF1;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    background-color: black;
+    box-shadow: 2px 2px 6px rgba(87, 85, 85, 0.4);
     transition-duration: .25s; }
 
   .menu__item {
     display: block;
     padding: 70px 24px;
-    color: #333;
+    color: #b40404;
     font-family: "Calibri";
     font-size: 20px;
     font-weight: 600;
@@ -301,24 +295,31 @@ body {
     transition-duration: .25s; }
 
   .menu__item:hover {
-    background-color: #CFD8DC; }
+    background-color: #4b0000; }
 
   .glitch {
     font-size: 3em; }
 
   article.trailers {
-    text-align: center; } }
-/* end of media query*/
+    text-align: left; }
+
+  article.article {
+    text-align: left; } }
 @media only screen and (min-width: 768px) {
+  /*HEADER*/
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #ff00b3; }
+    background-color: #b40404; }
+
+  ul.menu__box {
+    font-size: 8px; }
 
   li {
-    float: left; }
+    float: left;
+    height: min-content; }
 
   li a {
     display: block;
@@ -329,10 +330,42 @@ body {
 
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: #b90f86; }
+    background-color: #2b0303; }
 
   #menu__toggle {
     display: none; }
+
+  header {
+    display: grid;
+    grid-template-columns: auto;
+    position: fixed;
+    background-color: #b40404;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: min-content;
+    padding: 0px;
+    z-index: 100;
+    grid-column: 1 / -1; }
+
+  header > h1 {
+    display: flex;
+    size: auto;
+    font-family: "Creepster", "Chiller";
+    color: black;
+    font-size: 10em; }
+
+  .menu__item {
+    display: block;
+    padding: 2px 20px;
+    color: black;
+    font-family: "Calibri";
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none; }
+
+  .menu__item:hover {
+    background-color: #4b0000; }
 
   article.email {
     padding-top: 200px; }
@@ -341,5 +374,125 @@ body {
     padding-top: 200px; }
 
   article.trailers {
-    text-align: center; } }
+    text-align: center; }
+
+  body {
+    padding-bottom: 65px;
+    background-image: url("../images/theater.jpg");
+    background-color: #060d1d;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    grid-template-columns: auto;
+    grid-template-rows: min-content auto; }
+
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 600px;
+    border: none;
+    display: block;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */ }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d; }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); }
+
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden; }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: transparent;
+    color: black; }
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg); }
+
+  /* css animation INTENTIONAL LOOKING GLITCH */
+  body {
+    /*background: black; */
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    color: black;
+    font-family: sans-serif; }
+
+  .glitch {
+    font-size: 8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    animation: glitch 500ms infinite; }
+
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+  .glitch span:first-child {
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-0.025em, -0.0125em);
+    /* color: green; */
+    opacity: 0.8; }
+
+  .glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+    transform: translate(0.0125em, 0.025em);
+    /* color: red; */
+    opacity: 0.8; }
+
+  /* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75); }
+    14% {
+      text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75); }
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); }
+    49% {
+      text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); }
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75); }
+    99% {
+      text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75); }
+    100% {
+      text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75); } } }
+@media only screen and (min-width: 768px) and (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important; } }
 /* end of media query*/

@@ -7,11 +7,11 @@ The features I included in this project include:
 CSS:
 1) A navigation menu that expands and collapses properly at desktop and mobile sizes, such as by switching between vertical and horizontal styles, or is opened and closed by clicking the “hamburger” icon.
 
-2)Create your own original CSS animation. For example, create a loading spinner or menu animation. Note: CSS Animations are not included in the assigned Pluralsight track, you will have to research this on your own.
+2) Create your own original CSS animation. For example, create a loading spinner or menu animation.
 
 Javascript:
-1)Create a form (such as a ‘Contact Us’ form), validate at least one field (ex: email is in the correct format) and then use that information on your page somehow. For example, display it back to the user on button click, or change a setting on the page based on a section. Having a form that does nothing on clicking Submit or that just refreshes the page is not enough - you must capture the value(s) of the form and use it somehow. 
+1) Create a form (such as a ‘Contact Us’ form), validate at least one field (ex: email is in the correct format) and then use that information on your page somehow.
 
-2)Create a JavaScript function that performs some form of mathematical operation (calculates something) and displays the result on your page or otherwise uses that value to do something on the site. 
+2) Create a JavaScript function that performs some form of mathematical operation (calculates something) and displays the result on your page or otherwise uses that value to do something on the site. 
 
-3)Create at least 3 variables (var, const, or let), set their values in JavaScript, and display the values somewhere on your page.
+3) Create at least 3 variables (var, const, or let), set their values in JavaScript, and display the values somewhere on your page.
